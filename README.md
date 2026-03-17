@@ -1,0 +1,2 @@
+# flipit-privacy
+Privacy Policy
