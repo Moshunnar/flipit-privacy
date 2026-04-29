@@ -1,74 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flip It — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0D0F14; color: #F0EDE8; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif; font-size: 16px; line-height: 1.75; padding: 48px 24px 80px; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fcfbf9;
+      color: #18181a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 48px 24px 96px;
+    }
+
     .wrap { max-width: 680px; margin: 0 auto; }
-    .logo { font-size: 28px; font-weight: 300; color: #E8C97A; letter-spacing: -0.5px; margin-bottom: 48px; }
-    h1 { font-size: 32px; font-weight: 300; color: #F0EDE8; margin-bottom: 8px; }
-    .updated { font-size: 13px; color: #A8A8B8; margin-bottom: 48px; }
-    h2 { font-size: 16px; font-weight: 600; color: #E8C97A; margin: 36px 0 10px; letter-spacing: 0.3px; }
-    p { color: rgba(240,237,232,0.75); margin-bottom: 12px; }
-    ul { color: rgba(240,237,232,0.75); padding-left: 20px; margin-bottom: 12px; }
-    li { margin-bottom: 6px; }
-    a { color: #E8C97A; text-decoration: none; border-bottom: 1px solid rgba(232,201,122,0.3); }
-    a:hover { border-bottom-color: #E8C97A; }
-    .divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 48px 0; }
-    .contact { background: rgba(232,201,122,0.06); border: 1px solid rgba(232,201,122,0.18); border-radius: 12px; padding: 20px 24px; margin-top: 48px; }
-    .contact p { margin: 0; }
+
+    .logo {
+      font-family: 'Instrument Serif', serif;
+      font-size: 30px;
+      color: #18181a;
+      margin-bottom: 56px;
+    }
+    .logo em {
+      font-style: italic;
+      color: #b587f7;
+    }
+
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 40px;
+      font-weight: 400;
+      color: #18181a;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #a1a1aa;
+      margin-bottom: 40px;
+    }
+
+    .lead {
+      font-size: 16px;
+      color: #3f3f46;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.1px;
+      color: #a1a1aa;
+      text-transform: uppercase;
+      margin: 44px 0 12px;
+    }
+
+    p { color: #3f3f46; margin-bottom: 12px; }
+
+    ul {
+      color: #3f3f46;
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    strong { color: #18181a; font-weight: 600; }
+
+    a {
+      color: #b587f7;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(181,135,247,0.3);
+      transition: border-color 0.15s;
+    }
+    a:hover { border-bottom-color: #b587f7; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e3da;
+      margin: 52px 0;
+    }
+
+    .callout {
+      background: #f0ebfc;
+      border: 1px solid rgba(181,135,247,0.25);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .callout p { color: #3f3f46; margin: 0; }
+
+    .contact {
+      background: #f4f1ec;
+      border: 1px solid #e8e3da;
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-top: 52px;
+    }
+    .contact p { margin: 0; color: #727272; }
+    .contact strong { color: #18181a; }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #b587f7;
+      background: #f0ebfc;
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin-left: 6px;
+      vertical-align: middle;
+      letter-spacing: 0.3px;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="logo">flip it.</div>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 2026</p>
 
-    <p>Flip It is a thought-reframing app designed to help you examine and shift unhelpful thinking patterns. Your privacy is important to us. This policy explains what we collect, why, and how it is used.</p>
+    <div class="logo">flip <em>it.</em></div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 2026</p>
+
+    <p class="lead">Flip It is a thought-reframing and self-reflection app. We built it with privacy as a default — most of your data never leaves your device. This policy explains exactly what we collect, why, and who handles it.</p>
 
     <h2>What we collect</h2>
     <p>Flip It collects the minimum data necessary to function:</p>
     <ul>
-      <li><strong>Thoughts you enter</strong> — sent to our API to generate an insight and action. They are not stored on our servers after processing.</li>
-      <li><strong>Mood ratings</strong> — stored locally on your device only.</li>
-      <li><strong>Flip history</strong> — stored locally on your device using CoreData. We do not have access to this data.</li>
-      <li><strong>Purchase status</strong> — managed by RevenueCat to verify your Pro subscription. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's privacy policy</a>.</li>
-      <li><strong>Anonymous usage metrics</strong> — basic crash and usage data via Apple's standard frameworks, used only to fix bugs.</li>
+      <li><strong>Thoughts you enter</strong> — sent to our API to generate an insight and a suggested action. They are not stored on our servers after the response is returned.</li>
+      <li><strong>Mood ratings</strong> (before and after a flip) — stored locally on your device only.</li>
+      <li><strong>Context tags</strong> (e.g. Work, Health, Relationships) — stored locally on your device only.</li>
+      <li><strong>Journal notes</strong> — any notes you add to a flip are stored locally on your device only.</li>
+      <li><strong>Protective factors</strong> — what you logged as helpful after a high mood lift. Stored locally on your device only.</li>
+      <li><strong>Flip history</strong> — your full history of thoughts, insights, actions, and mood scores, stored locally using CoreData. We do not have access to this data.</li>
+      <li><strong>Purchase &amp; subscription status</strong> — managed by RevenueCat to verify your Pro subscription. A RevenueCat user ID is generated on first launch and linked to your subscription. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's privacy policy</a>.</li>
+      <li><strong>Anonymous crash and usage data</strong> — basic diagnostics via Apple's standard frameworks, used only to fix bugs and crashes.</li>
     </ul>
+
+    <h2>Pattern recognition <span class="badge">Pro</span></h2>
+    <p>If you are a Pro subscriber, Flip It can analyse your flip history to surface recurring thought patterns. To do this, a summary of your recent thoughts (up to 40, truncated to 120 characters each) and associated mood scores are sent to our API. This data is used only to generate the pattern response and is not stored on our servers.</p>
 
     <h2>What we do not collect</h2>
     <ul>
-      <li>We do not collect your name, email, or any personally identifiable information.</li>
+      <li>We do not collect your name, email address, or any personally identifiable information.</li>
       <li>We do not sell your data to third parties.</li>
-      <li>We do not use your thoughts or mood data for advertising or profiling.</li>
-      <li>We do not share your data with anyone except the sub-processors listed below.</li>
+      <li>We do not use your thoughts, mood data, or journal notes for advertising or profiling.</li>
+      <li>We do not share your data with anyone except the sub-processors listed below, and only to the extent necessary to operate the service.</li>
     </ul>
 
     <h2>Sub-processors</h2>
     <ul>
-      <li><strong>DeepSeek</strong> — your thought is sent to DeepSeek's API to generate a reframe. It is processed in real time and immediately discarded. DeepSeek's privacy policy is available at <a href="https://deepseek.com/privacy" target="_blank">deepseek.com/privacy</a>.</li>
-      <li><strong>RevenueCat</strong> — manages in-app purchase verification. <a href="https://www.revenuecat.com/privacy" target="_blank">Their privacy policy</a>.</li>
-      <li><strong>Apple</strong> — App Store, StoreKit, and optional crash reporting via Xcode.</li>
+      <li><strong>AI language model provider</strong> — your thought (and, for pattern analysis, a recent thought summary) is processed by an AI model to generate a reframe, insight, and action. Data is not stored or used to train models beyond what is required by the provider's standard usage policy.</li>
+      <li><strong>RevenueCat</strong> — manages in-app purchase verification and subscription status. <a href="https://www.revenuecat.com/privacy" target="_blank">Their privacy policy</a>.</li>
+      <li><strong>Cloudflare Workers</strong> — our API runs on Cloudflare's edge infrastructure. Requests are processed transiently and not logged with personal identifiers. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Their privacy policy</a>.</li>
+      <li><strong>Apple</strong> — App Store, StoreKit, and optional crash reporting via Xcode Organiser.</li>
     </ul>
 
-    <h2>Data storage</h2>
-    <p>All personal data (flip history, mood scores, settings) is stored locally on your device. It is not backed up to any server we control. If you delete the app, this data is removed from your device.</p>
+    <h2>Data storage &amp; retention</h2>
+    <p>All personal data — flip history, mood scores, context tags, journal notes, and settings — is stored locally on your device using CoreData. It is not backed up to any server we control.</p>
     <p>Your free flip count is stored in your device's secure Keychain to prevent abuse. This persists across reinstalls but is tied only to your device — we cannot read it.</p>
+    <p>If you delete the app, all locally stored data is permanently removed from your device.</p>
+
+    <h2>Your garden &amp; tokens</h2>
+    <p>The garden feature generates visual tokens from your flip history entirely on-device. No data is sent to our servers to build or display your garden.</p>
 
     <h2>Children's privacy</h2>
-    <p>Flip It is rated 12+ and is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+    <p>Flip It is rated 12+ and is not directed at children under 13. We do not knowingly collect data from children under 13. If you believe a child under 13 has used the app, please contact us so we can assist.</p>
 
     <h2>Mental health disclaimer</h2>
-    <p>Flip It is a wellness tool, not a medical or therapeutic service. It is not a substitute for professional mental health care. If you are in crisis, please contact a qualified professional or a crisis helpline.</p>
 
-    <h2>Data deletion</h2>
-    <p>Because we do not store your personal data on our servers, there is nothing to delete on our end. To remove all local data (flip history, mood scores), simply delete the app from your device. For any questions, contact <a href="mailto:privacy@flipitapp.com">privacy@flipitapp.com</a>.</p>
+    <div class="callout">
+      <p>Flip It is a wellness and self-reflection tool — not a medical device, therapy service, or substitute for professional mental health care. If you are in crisis or need immediate support, please contact a qualified professional or a crisis helpline such as the Crisis Text Line (text <strong>HOME</strong> to <strong>741741</strong>).</p>
+    </div>
 
     <h2>Changes to this policy</h2>
-    <p>We may update this policy as the app evolves. The latest version will always be available at this URL. Continued use of the app after changes constitutes acceptance.</p>
+    <p>We may update this policy as the app evolves. The latest version will always be available at this URL. Material changes will be noted in the app's release notes. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
     <hr class="divider" />
+
+    <div class="contact">
+      <p><strong>Questions about this policy?</strong><br />
+      Contact us at <a href="mailto:privacy@flipitapp.com">privacy@flipitapp.com</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
